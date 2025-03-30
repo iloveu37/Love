@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="landing-page">
+            <div class="hearts"></div>
+            <h1>For Someone Special</h1>
+            <p class="subtitle">Click anywhere to begin this journey</p>
+        </div>
+
+        <div class="memory-page hidden">
+            <div class="memory-content">
+                <h2>Our Story</h2>
+                <div class="memory-text">
+                    <p>From the moment we met, I knew there was something special about you.</p>
+                    <p>Every laugh, every conversation, every moment together has only confirmed what my heart felt from the beginning.</p>
+                </div>
+                <div class="navigation">
+                    <button class="btn prev-btn">← Previous</button>
+                    <button class="btn next-btn">Next →</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-page hidden">
+            <h2>Moments I Cherish</h2>
+            <div class="photo-grid">
+                <!-- Add your photos here -->
+                <div class="photo-item" style="background-image: url('placeholder1.jpg')"></div>
+                <div class="photo-item" style="background-image: url('placeholder2.jpg')"></div>
+                <div class="photo-item" style="background-image: url('placeholder3.jpg')"></div>
+                <!-- Add more as needed -->
+            </div>
+            <button class="btn continue-btn">Continue the Journey</button>
+        </div>
+
+        <div class="proposal-page hidden">
+            <div class="ring-box">
+                <div class="ring"></div>
+                <div class="diamond"></div>
+            </div>
+            <div class="proposal-content">
+                <h2>[Your Name]</h2>
+                <p class="proposal-text">You make my world brighter, my heart fuller, and my life more beautiful. Will you make me the happiest person and...</p>
+                <h1 class="proposal-question">Will You Be Mine?</h1>
+                <div class="answer-buttons">
+                    <button class="btn yes-btn">YES!</button>
+                    <button class="btn no-btn">No</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="yes-page hidden">
+            <div class="confetti"></div>
+            <h1>She Said YES!</h1>
+            <p class="celebration-text">This is just the beginning of our beautiful journey together!</p>
+            <div class="countdown">
+                <p>Our adventure begins in:</p>
+                <div class="countdown-timer">
+                    <span id="days">00</span> Days 
+                    <span id="hours">00</span> Hours 
+                    <span id="minutes">00</span> Minutes 
+                    <span id="seconds">00</span> Seconds
+                </div>
+            </div>
+        </div>
+
+        <audio id="background-music" loop>
+            <source src="best.mp3" type="audio/mpeg">
+        </audio>
+        <button id="music-toggle" class="music-btn">🔊</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
